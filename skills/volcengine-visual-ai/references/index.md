@@ -1,6 +1,22 @@
 # Capability index
 
-This knowledge base summarizes 57 unique official Volcengine Jimeng AI pages supplied by the user. It records 27 published `req_key` values. Use `documents.json` as the canonical source registry and `api-catalog.json` as the canonical interface registry.
+This knowledge base summarizes 57 unique official Volcengine Jimeng/Pippit pages plus three official ByteDance product/CLI guides supplied by the user. It records 27 published API `req_key` values. Use `documents.json` as the canonical source registry and `api-catalog.json` as the canonical API interface registry.
+
+## Choose an execution channel
+
+Before the first task in the chosen row, read `configuration-onboarding.md` and confirm that its membership, authorization, service enablement, quota, and compliance prerequisites are configured. Ask for status only; never request credential values.
+
+| Need | Use | Do not confuse it with |
+| --- | --- | --- |
+| Local Agent/terminal automation using an eligible 即梦 membership and credits | Dreamina CLI (`dreamina`) | It does not use Volcengine AK/SK or API `req_key` values |
+| Personal-Agent creation using Pippit membership and a locally configured Access Key | Pippit CLI-installed `Xyq Skill` / `Xyq Short Drama Skill` | It is not Dreamina OAuth or a Volcengine AK/SK API |
+| Seedance 2.5 segment reshoot, viral remake, white-model control, canvas, long-video extension, or other product workflow | Pippit Web/App | Product UI availability does not prove CLI/API availability |
+| Server-side signed integration with model-level control | Jimeng model API | It is not the member-credit CLI workflow |
+| Agent-planned marketing, long-form, or short-drama workflows | Pippit 小云雀 Agent API | It is not a single Jimeng model call |
+
+Read `dreamina-cli.md` whenever the user mentions `dreamina`, 即梦 CLI, command-line installation/login, local paths, Session, `submit_id`, `query_result`, or member credits.
+
+Read `pippit-personal-agent-cli.md` for `@pippit-dev/cli`, Pippit Access Key, `Xyq Skill`, or `Xyq Short Drama Skill`. Read `pippit-seedance25-product.md` for Seedance 2.5 product workflows, reference-material limits, prompt/timecode rules, and UI-versus-CLI/API boundaries.
 
 ## Choose a capability
 
@@ -25,6 +41,7 @@ This knowledge base summarizes 57 unique official Volcengine Jimeng AI pages sup
 
 ## Read next
 
+- For first-use authorization/API setup and the module-by-module dialogue checklist, read `configuration-onboarding.md`.
 - For first-time integration guidance and required user questions, read `integration-playbook.md`.
 - For a function-by-function comparison of hard limits and non-applicable cases, read `capability-boundaries.md`.
 - For endpoint, status, retry, URL-expiry, and error handling, read `common-protocol.md`.
@@ -40,3 +57,5 @@ This knowledge base summarizes 57 unique official Volcengine Jimeng AI pages sup
 - OmniHuman is not a single-call workflow when the speaker/subject must be selected.
 - Pippit Agent 2.0 with-reference bills using both input-video duration and output duration; no-reference accepts images only and bills differently.
 - Short-drama composition requires successful shot generation for the episode and does not replace failed shots automatically.
+- Dreamina CLI flags and Volcengine API parameters are separate contracts; never translate between them by name alone.
+- Pippit product capabilities and Pippit personal-Agent Skills are separate contracts; require installed help or an interface page before promising programmatic support.
