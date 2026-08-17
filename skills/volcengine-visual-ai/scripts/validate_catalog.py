@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 REFERENCES = ROOT / "references"
 REQUIRED_REFERENCES = {
     "index.md",
+    "configuration-onboarding.md",
     "integration-playbook.md",
     "capability-boundaries.md",
     "common-protocol.md",
@@ -21,6 +22,9 @@ REQUIRED_REFERENCES = {
     "request-recipes.md",
     "pricing-and-onboarding.md",
     "compliance.md",
+    "dreamina-cli.md",
+    "pippit-personal-agent-cli.md",
+    "pippit-seedance25-product.md",
     "documents.json",
     "api-catalog.json",
 }
@@ -42,7 +46,7 @@ def main() -> int:
     documents = documents_catalog["documents"]
     apis = api_catalog["apis"]
 
-    require(len(documents) == documents_catalog["document_count"] == 57, "expected 57 documents")
+    require(len(documents) == documents_catalog["document_count"] == 60, "expected 60 documents")
     require(len(apis) == api_catalog["api_count"] == 27, "expected 27 APIs")
     missing_references = sorted(name for name in REQUIRED_REFERENCES if not (REFERENCES / name).is_file())
     require(not missing_references, f"missing references: {missing_references}")
@@ -54,7 +58,10 @@ def main() -> int:
     for item in documents:
         parsed = urlparse(item["url"])
         require(parsed.scheme == "https", f"non-HTTPS source: {item['url']}")
-        require(parsed.netloc == "docs.volcengine.com", f"unexpected source host: {item['url']}")
+        require(
+            parsed.netloc in {"docs.volcengine.com", "bytedance.larkoffice.com"},
+            f"unexpected source host: {item['url']}",
+        )
         require(item["id"] in parsed.path, f"document ID missing from URL: {item['id']}")
 
     req_keys = [item["req_key"] for item in apis]
