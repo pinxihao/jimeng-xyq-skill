@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "snapshot_date": "2026-08-17",
-  "source": "Volcengine official documentation",
-  "document_count": 57,
+  "source": "Official Volcengine and ByteDance product documentation",
+  "document_count": 60,
   "documents": [
     {"id":"1536950","title":"即梦AI服务专用条款","type":"terms","category":"compliance","updated":"2025-07-02 17:30:45","req_keys":[],"url":"https://docs.volcengine.com/docs/85621/1536950?lang=zh"},
     {"id":"1538138","title":"生成式模型服务专用条款","type":"terms","category":"compliance","updated":"2025-07-02 17:30:46","req_keys":[],"url":"https://docs.volcengine.com/docs/85621/1538138?lang=zh"},
@@ -60,6 +60,9 @@
     {"id":"2407085","title":"小云雀-短剧漫剧Agent-视频合成-Seedance 2.0 fast 720p-接口文档","type":"api","category":"short-drama","updated":"2026-05-15 16:20:33","req_keys":["pippit_shortplay_cvtob_video_compose_fast720p"],"url":"https://docs.volcengine.com/docs/85621/2407085?lang=zh"},
     {"id":"2424562","title":"小云雀-短剧漫剧Agent-视频合成-Seedance 2.0 720p-接口文档","type":"api","category":"short-drama","updated":"2026-05-15 16:20:51","req_keys":["pippit_shortplay_cvtob_video_compose_pro720p"],"url":"https://docs.volcengine.com/docs/85621/2424562?lang=zh"},
     {"id":"2432754","title":"小云雀-短剧漫剧Agent-产品介绍","type":"product","category":"short-drama","updated":"2026-05-18 20:53:59","req_keys":[],"url":"https://docs.volcengine.com/docs/85621/2432754?lang=zh"},
-    {"id":"2459788","title":"小云雀-短剧漫剧Agent-全流程调用示例","type":"example","category":"short-drama","updated":"2026-05-18 19:48:55","req_keys":["pippit_shortplay_cvtob_script_analysis","pippit_shortplay_cvtob_material_design","pippit_shortplay_cvtob_video_generate_pro720p","pippit_shortplay_cvtob_video_generate_fast720p","pippit_shortplay_cvtob_video_compose_pro720p","pippit_shortplay_cvtob_video_compose_fast720p"],"url":"https://docs.volcengine.com/docs/85621/2459788?lang=zh"}
+    {"id":"2459788","title":"小云雀-短剧漫剧Agent-全流程调用示例","type":"example","category":"short-drama","updated":"2026-05-18 19:48:55","req_keys":["pippit_shortplay_cvtob_script_analysis","pippit_shortplay_cvtob_material_design","pippit_shortplay_cvtob_video_generate_pro720p","pippit_shortplay_cvtob_video_generate_fast720p","pippit_shortplay_cvtob_video_compose_pro720p","pippit_shortplay_cvtob_video_compose_fast720p"],"url":"https://docs.volcengine.com/docs/85621/2459788?lang=zh"},
+    {"id":"FVTwwm0bGiishxkKOoScdHR2nsg","title":"即梦 CLI 体验指南","type":"guide","category":"dreamina-cli","updated":"2026-08-05 18:43:00","req_keys":[],"url":"https://bytedance.larkoffice.com/wiki/FVTwwm0bGiishxkKOoScdHR2nsg"},
+    {"id":"W5tHwoZIDi12dbk2z3KcFkuUnsf","title":"小云雀 Seedance 2.5 使用手册","type":"guide","category":"pippit-product","updated":"2026-08-14 15:32:00","req_keys":[],"url":"https://bytedance.larkoffice.com/wiki/W5tHwoZIDi12dbk2z3KcFkuUnsf"},
+    {"id":"JUlowWl8Bi6X8fkTKrYc70zRnVc","title":"把小云雀装进你的个人 Agent","type":"guide","category":"pippit-cli","updated":"2026-08-17","req_keys":[],"url":"https://bytedance.larkoffice.com/wiki/JUlowWl8Bi6X8fkTKrYc70zRnVc"}
   ]
 }
