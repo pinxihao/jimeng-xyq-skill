@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-08-17",
+  "gateway": {
+    "endpoint": "https://visual.volcengineapi.com",
+    "method": "POST",
+    "service": "cv",
+    "region": "cn-north-1",
+    "version": "2022-08-31"
+  },
+  "api_count": 27,
+  "apis": [
+    {"name":"文生图3.0","category":"image","req_key":"jimeng_t2i_v30","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"successful call","source_doc_ids":["1616429","1770795"]},
+    {"name":"图生图3.0智能参考","category":"image","req_key":"jimeng_i2i_v30","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"successful call","source_doc_ids":["1747301","1749156"]},
+    {"name":"文生图3.1","category":"image","req_key":"jimeng_t2i_v31","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"successful call","source_doc_ids":["1756900","1770977"]},
+    {"name":"图片生成4.0","category":"image","req_key":"jimeng_t2i_v40","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"generated image","source_doc_ids":["1817045","1820192"]},
+    {"name":"图片生成4.6","category":"image","req_key":"jimeng_seedream46_cvtob","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"generated image","source_doc_ids":["2275082","2288388"]},
+    {"name":"交互编辑inpainting","category":"image","req_key":"jimeng_image2image_dream_inpaint","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"successful call","source_doc_ids":["1976207","2136166"]},
+    {"name":"智能扩图outpainting","category":"image","req_key":"jimeng_img2img_seed3_painting_edit","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"successful call","source_doc_ids":["2375477"]},
+    {"name":"商品提取","category":"image","req_key":"jimeng_i2i_extract_tiled_images","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"generated image","source_doc_ids":["2129114","2134550"]},
+    {"name":"POD按需定制素材提取","category":"image","req_key":"i2i_material_extraction","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"generated image","source_doc_ids":["1925087","1927051"]},
+    {"name":"智能超清","category":"image","req_key":"jimeng_i2i_seed3_tilesr_cvtob","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"successful call","source_doc_ids":["2164805","2164806"]},
+    {"name":"视频生成3.0 Pro","category":"video","req_key":"jimeng_ti2v_v30_pro","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"output second","source_doc_ids":["1777001","1783678"]},
+    {"name":"动作模仿1.0","category":"motion","req_key":"jimeng_dream_actor_m1_gen_video_cv","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"output second","source_doc_ids":["1798351","1798365"]},
+    {"name":"动作模仿2.0","category":"motion","req_key":"jimeng_dreamactor_m20_gen_video","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"output second","source_doc_ids":["2201579","2205633"]},
+    {"name":"视频翻译2.0","category":"video","req_key":"video_translate_v2_cvtob","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"output second","source_doc_ids":["2189006","2235030"]},
+    {"name":"OmniHuman 1.5 主体识别","category":"avatar","req_key":"jimeng_realman_avatar_picture_create_role_omni_v15","submit_action":"CVSubmitTask","query_action":"CVGetResult","billing_unit":"workflow step","source_doc_ids":["1828975","1834143"]},
+    {"name":"OmniHuman 1.5 主体检测","category":"avatar","req_key":"jimeng_realman_avatar_object_detection","submit_action":"CVProcess","query_action":null,"billing_unit":"workflow step","source_doc_ids":["1829011","1834143"]},
+    {"name":"OmniHuman 1.5 视频生成","category":"avatar","req_key":"jimeng_realman_avatar_picture_omni_v15","submit_action":"CVSubmitTask","query_action":"CVGetResult","billing_unit":"output second","source_doc_ids":["1829013","1834143"]},
+    {"name":"小云雀智能生视频Agent 1.0","category":"pippit","req_key":"pippit_iv2v_cvtob","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"task/output","source_doc_ids":["2283633","2306243"]},
+    {"name":"小云雀智能生视频Agent 2.0 有参考","category":"pippit","req_key":"pippit_iv2v_v20_cvtob_with_vinput","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"input video seconds plus output seconds","source_doc_ids":["2359610","2371410"]},
+    {"name":"小云雀智能生视频Agent 2.0 无参考","category":"pippit","req_key":"pippit_iv2v_v20_cvtob","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"output/task","source_doc_ids":["2359611","2371410"]},
+    {"name":"小云雀营销成片Agent","category":"pippit","req_key":"pippit_iv2v_cvtob_master","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"task/output","source_doc_ids":["2283654","2306244"]},
+    {"name":"短剧漫剧剧本解析","category":"short-drama","req_key":"pippit_shortplay_cvtob_script_analysis","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"task","source_doc_ids":["2389851","2432754","2459788"]},
+    {"name":"短剧漫剧图片生成","category":"short-drama","req_key":"pippit_shortplay_cvtob_material_design","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"generated material","source_doc_ids":["2389852","2432754","2459788"]},
+    {"name":"短剧漫剧视频生成 fast 720P","category":"short-drama","req_key":"pippit_shortplay_cvtob_video_generate_fast720p","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"generated video","source_doc_ids":["2389853","2432754","2459788"]},
+    {"name":"短剧漫剧视频生成 Pro 720P","category":"short-drama","req_key":"pippit_shortplay_cvtob_video_generate_pro720p","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"generated video","source_doc_ids":["2389854","2432754","2459788"]},
+    {"name":"短剧漫剧视频合成 fast 720P","category":"short-drama","req_key":"pippit_shortplay_cvtob_video_compose_fast720p","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"unbilled composition","source_doc_ids":["2407085","2432754","2459788"]},
+    {"name":"短剧漫剧视频合成 Pro 720P","category":"short-drama","req_key":"pippit_shortplay_cvtob_video_compose_pro720p","submit_action":"CVSync2AsyncSubmitTask","query_action":"CVSync2AsyncGetResult","billing_unit":"unbilled composition","source_doc_ids":["2424562","2432754","2459788"]}
+  ]
+}
