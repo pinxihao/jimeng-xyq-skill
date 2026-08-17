@@ -1,0 +1,4 @@
+interface:
+  display_name: "火山引擎视觉 AI"
+  short_description: "引导选择、开通并接入即梦、小云雀与短剧漫剧视觉生成接口"
+  default_prompt: "使用 $volcengine-visual-ai 根据我的素材与目标选择接口，说明能力边界，并给出从开通到生产上线的接入方案。"
